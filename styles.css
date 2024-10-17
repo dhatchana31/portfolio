@@ -1,19 +1,19 @@
-@import'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
- 
-:root{
-    --primary-color:rgb(172, 44, 133);
-    --primary-color-dark:rgb(192, 49, 121); 
-    --secondary--color:yellow;
-    --text-dark:black;
-    --text--light:rgb(82, 77, 77);
-    --extra--light:white;
-    --max-width:1200px;
-
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", serif;
+}
+:root{
+    --bg-color:rgb(148, 54, 54);
+    --snd-bf-color:black;
+    --text-color:white;
+    --main-color:blue;
 }
 
 a{
@@ -165,6 +165,92 @@ ul li a:hover{
 .image img{
     width: min(25rem, 90%);
     border-radius: 100%;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--snd-bf-color);
+}
+.about-img img{
+    width:35vw;
+}
+.heading{
+    text-align: center;
+    font-size: 4.5rem;
+}
+.about-content h2 {
+    text-align: left;
+    line-height: 1.2;
+}
+.about-content h3{
+    font-size: 2.6 rem;
+}
+.about-content p{
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+.contact h2{
+    margin-bottom: 3rem;
+}
+.contact form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact form .input-box input,
+.contact form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--snd-bf-color);
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+.contact form .input-box input{
+    width: 49%;
+}
+ .contact form textarea{
+        resize: none;
+}
+.contact form .btn{
+    margin-top: 2rem;
+    cursor: pointer;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--snd-bf-color);
+}
+.footer-text{
+    font-size: 1.6rem;
+}
+.footer-icontop{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem 1rem;
+    background: var(--main-color);
+    border-radius: .8rem;
+    transition: .5s ease;
+}
+.footer-icontop a:hover{
+    box-shadow: 0 0 1rem var(--main-color);
+}
+.footer-icontop a i {
+    font-size: 2.4rem;
+    color: var(--snd-bf-color);
 }
 
 @media(width < 750px){
